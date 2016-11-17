@@ -1,0 +1,8 @@
+.centered {
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}
+#descendants {
+  text-align: left;
+}

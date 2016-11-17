@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Locations</title>
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+<body>
+  <div class="centered">
+    <h1>Locations</h1>
+  <div>
+  <div class="centered">
+    <select name="location">
+      <% locations.forEach(function(location){ %>
+        <option value="<%= location.location_id %>"><%= location.location_name %>: <%=location.path_to_top_parent %>
+        </option>
+       <% }) %>
+      </select>
+  </div>
+  <div id="selected" class="centered">
+  </div>
+  <div id="descendants" class="centered">
+  </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+ </body>
+</html>
